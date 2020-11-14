@@ -1,3 +1,54 @@
 .nav-tabs .nav-link.active a {
     color: #ee1d42 !important;
 }
+
+.charts .MuiSvgIcon-root {
+    font-size: 16px;
+}
+
+.charts .MuiSvgIcon-root.hris {
+    font-size: 14px;
+    border: 1px solid #000000;
+}
+
+.hiring .MuiSvgIcon-root,
+.HRIS .MuiSvgIcon-root,
+.payroll .MuiSvgIcon-root,
+.time .MuiSvgIcon-root,
+.performance .MuiSvgIcon-root,
+.mobile .MuiSvgIcon-root {
+    font-size: 1.2rem;
+    margin-bottom: 0.15em;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.nav-link a:hover {
+    color: #ee1d42 !important;
+}
+
+.nav-link.active a {
+    color: #ee1d42 !important;
+}
+
+.hiring .nav-link.active .MuiSvgIcon-root,
+.HRIS .nav-link.active .MuiSvgIcon-root,
+.payroll .nav-link.active .MuiSvgIcon-root,
+.time .nav-link.active .MuiSvgIcon-root,
+.performance .nav-link.active .MuiSvgIcon-root,
+.mobile .nav-link.active .MuiSvgIcon-root {
+    border-color: #ee1d42;
+}
+
+.hiring .nav-link:hover .MuiSvgIcon-root,
+.HRIS .nav-link:hover .MuiSvgIcon-root,
+.payroll .nav-link:hover .MuiSvgIcon-root,
+.time .nav-link:hover .MuiSvgIcon-root,
+.performance .nav-link:hover .MuiSvgIcon-root,
+.mobile .nav-link:hover .MuiSvgIcon-root {
+    border-color: #ee1d42;
+}
+
+.nav-tabs .nav-link.active .MuiSvgIcon-root.hris {
+    border: 1px solid #ee1d42;
+}

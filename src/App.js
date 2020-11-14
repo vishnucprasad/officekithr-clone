@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App bg-light">
+    <div className="App">
       <Navigationbar />
       <Router>
         <Route exact path="/"
