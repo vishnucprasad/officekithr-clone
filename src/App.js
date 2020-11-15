@@ -5,6 +5,8 @@ import Navigationbar from './Components/Navigationbar';
 import Header from './Components/Header';
 import Chart from './Components/Chart';
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
+import Footer from './Components/Footer';
+import Descriptions from './Components/Descriptions';
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
         <Route path="/home">
           <Header />
           <Chart />
+          <Descriptions />
         </Route>
       </Router>
+      <Footer />
     </div>
   );
 }

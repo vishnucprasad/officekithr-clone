@@ -5,10 +5,11 @@ import applicantTracking from '../../images/chart/Hiring&Onboarding/applicant-tr
 import talentAcquisition from '../../images/chart/Hiring&Onboarding/talent-acquisition.jpg';
 import talentOnboarding from '../../images/chart/Hiring&Onboarding/talent-onboarding.jpg';
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
+import { motion } from 'framer-motion';
 
 function Hiring() {
     return (
-        <div className="hiring">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className="hiring">
             <Container>
                 <Row className="justify-content-center">
                     <Col md={3}>
@@ -32,20 +33,20 @@ function Hiring() {
                             </Nav>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="overflow-hidden">
                         <Route path="/home/Hiring&Onboarding" exact>
-                            <img src={applicantTracking} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={applicantTracking} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Hiring&Onboarding/talent-acquisition">
-                            <img src={talentAcquisition} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={talentAcquisition} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Hiring&Onboarding/talent-onboarding">
-                            <img src={talentOnboarding} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={talentOnboarding} className="img-fluid" alt="" />
                         </Route>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 

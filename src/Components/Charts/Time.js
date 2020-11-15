@@ -7,10 +7,11 @@ import leaveManagement from '../../images/chart/Time&AbsenceTracking/leave-manag
 import shiftManagement from '../../images/chart/Time&AbsenceTracking/shift-management.png';
 import geoLocationTracking from '../../images/chart/Time&AbsenceTracking/geo-location-tracking.png';
 import attendanceReport from '../../images/chart/Time&AbsenceTracking/attendancereport.png';
+import { motion } from 'framer-motion';
 
 function Time() {
     return (
-        <div className="time">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className="time">
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4}>
@@ -44,26 +45,26 @@ function Time() {
                             </Nav>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="overflow-hidden">
                         <Route path="/home/Time&Absence-Tracking" exact>
-                            <img src={attendanceManagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={attendanceManagement} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Time&Absence-Tracking/Leave-Management">
-                            <img src={leaveManagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={leaveManagement} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Time&Absence-Tracking/Shift-Management">
-                            <img src={shiftManagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={shiftManagement} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Time&Absence-Tracking/Geo-Tagging-Based-Attendance">
-                            <img src={geoLocationTracking} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={geoLocationTracking} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Time&Absence-Tracking/Integration-with-Biometric">
-                            <img src={attendanceReport} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={attendanceReport} className="img-fluid" alt="" />
                         </Route>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 

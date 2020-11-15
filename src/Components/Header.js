@@ -5,7 +5,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 
 function Header() {
   return (
-    <div className="header bg-light">
+    <div className="header">
       <Container>
         <Row>
           <Col md={5}>

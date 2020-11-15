@@ -7,10 +7,11 @@ import geoLocationTracking from '../../images/chart/MobileApp&More/geo-location-
 import analytics from '../../images/chart/MobileApp&More/analytics.png';
 import queryBuilder from '../../images/chart/MobileApp&More/query-builder.png';
 import comminucation from '../../images/chart/MobileApp&More/comminucation.png';
+import { motion } from 'framer-motion';
 
 function Mobile() {
     return (
-        <div className="mobile">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className="mobile">
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4}>
@@ -44,26 +45,26 @@ function Mobile() {
                             </Nav>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="overflow-hidden">
                         <Route path="/home/MobileApp&More" exact>
-                            <img src={hrMobileApp} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={hrMobileApp} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/MobileApp&More/Geo-Location-Tracking">
-                            <img src={geoLocationTracking} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={geoLocationTracking} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/MobileApp&More/Analytics">
-                            <img src={analytics} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={analytics} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/MobileApp&More/Query-Builders">
-                            <img src={queryBuilder} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={queryBuilder} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/MobileApp&More/Employee-Communications">
-                            <img src={comminucation} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={comminucation} className="img-fluid" alt="" />
                         </Route>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 

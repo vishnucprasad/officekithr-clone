@@ -18,7 +18,7 @@ import Mobile from "./Charts/Mobile";
 function Chart() {
   return (
     <div className="charts">
-      <div className="bg-light">
+      <div className="chartNav">
         <Container>
           <Nav
             fill

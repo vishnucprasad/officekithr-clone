@@ -9,10 +9,11 @@ import integratedPayroll from '../../images/chart/Payroll/integrated-payroll.png
 import singleClickPayroll from '../../images/chart/Payroll/single-click-payroll.png'
 import loan from '../../images/chart/Payroll/loan.png'
 import complianceManagement from '../../images/chart/Payroll/compliance-management.png'
+import { motion } from 'framer-motion';
 
 function Payroll() {
     return (
-        <div className="payroll">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className="payroll">
             <Container>
                 <Row className="justify-content-center">
                     <Col md={6}>
@@ -56,32 +57,32 @@ function Payroll() {
                             </Nav>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="overflow-hidden">
                         <Route path="/home/Payroll" exact>
-                            <img src={compensationBenefits} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={compensationBenefits} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Payroll/Arrears&Retro-Salary-Calculations">
-                            <img src={payrollModule} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={payrollModule} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Payroll/Flexible-Salary-Slip-Configurations&Scheduling">
-                            <img src={salarySlip} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={salarySlip} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Payroll/Integrated-with-Final-Settlements">
-                            <img src={integratedPayroll} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={integratedPayroll} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Payroll/Single-click-Payroll-Process">
-                            <img src={singleClickPayroll} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={singleClickPayroll} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Payroll/Loans-and-Advances">
-                            <img src={loan} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={loan} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Payroll/Compliance-Management">
-                            <img src={complianceManagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={complianceManagement} className="img-fluid" alt="" />
                         </Route>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 

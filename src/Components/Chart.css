@@ -1,3 +1,7 @@
+.chartNav {
+ background-color: #f3f8ff;
+}
+
 .nav-tabs .nav-link.active a {
     color: #ee1d42 !important;
 }
@@ -51,4 +55,8 @@
 
 .nav-tabs .nav-link.active .MuiSvgIcon-root.hris {
     border: 1px solid #ee1d42;
+}
+
+.col-md-6.overflow-hidden {
+    min-height: 25rem;
 }

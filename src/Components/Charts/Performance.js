@@ -6,10 +6,11 @@ import goalPlaning from '../../images/chart/Performance&Talent/goal-planing.png'
 import feedback from '../../images/chart/Performance&Talent/feedback.png';
 import talentReview from '../../images/chart/Performance&Talent/talent-review.png';
 import talentAppraisal from '../../images/chart/Performance&Talent/talent-appraisal.png';
+import { motion } from 'framer-motion';
 
 function Performance() {
     return (
-        <div className="performance">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className="performance">
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4}>
@@ -38,23 +39,23 @@ function Performance() {
                             </Nav>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="overflow-hidden">
                         <Route path="/home/Performance&Talent" exact>
-                            <img src={goalPlaning} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={goalPlaning} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Performance&Talent/On-going-Feedback&Coaching">
-                            <img src={feedback} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={feedback} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Performance&Talent/Talent-Monitoring&Review">
-                            <img src={talentReview} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={talentReview} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/Performance&Talent/Talent-Appraisal">
-                            <img src={talentAppraisal} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={talentAppraisal} className="img-fluid" alt="" />
                         </Route>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 

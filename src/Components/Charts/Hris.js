@@ -10,10 +10,11 @@ import training from '../../images/chart/HRIS/training.png';
 import travel from '../../images/chart/HRIS/travel-view.png';
 import workflow from '../../images/chart/HRIS/workflow.png';
 import employeeSelfService from '../../images/chart/HRIS/ess.png';
+import { motion } from 'framer-motion';
 
 function Hris() {
     return (
-        <div className="HRIS">
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className="HRIS">
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4}>
@@ -62,35 +63,35 @@ function Hris() {
                             </Nav>
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="overflow-hidden">
                         <Route path="/home/HRIS" exact>
-                            <img src={employeeProfileMmanagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={employeeProfileMmanagement} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Employee-Doc-Management">
-                            <img src={employeeDocManagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={employeeDocManagement} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Rewards-and-Recognitions">
-                            <img src={employeeRewards} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={employeeRewards} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Exits&Separation-Management">
-                            <img src={exitAndManagement} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={exitAndManagement} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Training">
-                            <img src={training} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={training} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Travel">
-                            <img src={travel} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={travel} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Workflows">
-                            <img src={workflow} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={workflow} className="img-fluid" alt="" />
                         </Route>
                         <Route path="/home/HRIS/Employee-Self-Service-Portal">
-                            <img src={employeeSelfService} className="img-fluid" alt="" />
+                            <motion.img initial={{x: 400}} animate={{x: 0}} src={employeeSelfService} className="img-fluid" alt="" />
                         </Route>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 
