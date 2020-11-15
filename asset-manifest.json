@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/officekithr-clone/static/css/main.76d09ce0.chunk.css",
-    "main.js": "/officekithr-clone/static/js/main.2dd37b2c.chunk.js",
-    "main.js.map": "/officekithr-clone/static/js/main.2dd37b2c.chunk.js.map",
+    "main.js": "/officekithr-clone/static/js/main.17f6ebc8.chunk.js",
+    "main.js.map": "/officekithr-clone/static/js/main.17f6ebc8.chunk.js.map",
     "runtime-main.js": "/officekithr-clone/static/js/runtime-main.b126bc39.js",
     "runtime-main.js.map": "/officekithr-clone/static/js/runtime-main.b126bc39.js.map",
     "static/css/2.b30984d7.chunk.css": "/officekithr-clone/static/css/2.b30984d7.chunk.css",
@@ -63,6 +63,6 @@
     "static/css/2.b30984d7.chunk.css",
     "static/js/2.e256b63d.chunk.js",
     "static/css/main.76d09ce0.chunk.css",
-    "static/js/main.2dd37b2c.chunk.js"
+    "static/js/main.17f6ebc8.chunk.js"
   ]
 }
