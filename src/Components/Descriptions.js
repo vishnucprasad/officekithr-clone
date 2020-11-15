@@ -123,7 +123,7 @@ function Descriptions() {
                     </div>
                     <Row data-aos="fade-up" className="justify-content-center">
                         <Col md={12} className="text-center">
-                            <img data-aos="fade-up" src={locations} alt=""/>
+                            <img data-aos="fade-up" src={locations} alt="" className="img-fluid"/>
                         </Col>
                     </Row>
                 </Container>

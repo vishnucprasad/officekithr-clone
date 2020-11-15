@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigationbar from './Components/Navigationbar';
 import Header from './Components/Header';
 import Chart from './Components/Chart';
-import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
+import { HashRouter as Router, Redirect, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
 import Descriptions from './Components/Descriptions';
 

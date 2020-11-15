@@ -15,9 +15,11 @@ function Navigationbar() {
   return (
     <div className="navBar">
       <Container>
-        <Navbar variant="light" className="px-0 pb-5">
-          <Navbar.Brand href="#home"><img src={logo} alt='' /></Navbar.Brand>
-          <Nav className="ml-auto">
+        <Navbar variant="light" expand="lg" className="px-0 pb-5">
+          <Navbar.Brand href="#home"><img src={logo} alt='' /></Navbar.Brand>        
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto text-center">
             <Nav.Link className="p-0" href="">
               <OverlayTrigger
                 trigger="click"
@@ -161,6 +163,7 @@ function Navigationbar() {
             </Nav.Link>
             <Button variant="danger" className="rounded-pill">TRY IT FOR FREE</Button>
           </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </Container>
     </div>
