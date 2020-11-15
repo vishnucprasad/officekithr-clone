@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <filter id="Ellipse_15" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_304" data-name="Group 304" transform="translate(-575 -346)">
+    <g transform="matrix(1, 0, 0, 1, 575, 346)" filter="url(#Ellipse_15)">
+      <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="19" cy="19" r="19" transform="translate(9 6)" fill="#f55498"/>
+    </g>
+    <path id="ipod" d="M20.6,4H9.8A1.8,1.8,0,0,0,8,5.8v18a1.8,1.8,0,0,0,1.8,1.8H20.6a1.8,1.8,0,0,0,1.8-1.8V5.8A1.8,1.8,0,0,0,20.6,4ZM15.2,23.8a3.15,3.15,0,1,1,3.15-3.15A3.15,3.15,0,0,1,15.2,23.8Zm5.4-8.1H9.8l.019-9.9H20.6Zm-5.4,3.15a1.8,1.8,0,1,0,1.8,1.8A1.8,1.8,0,0,0,15.2,18.851Z" transform="translate(588 356)" fill="#fff"/>
+  </g>
+</svg>
